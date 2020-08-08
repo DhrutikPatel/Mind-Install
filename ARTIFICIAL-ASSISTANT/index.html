@@ -47,6 +47,11 @@
         </nav>
     </header>
 
+    <!--NAVBAR ENDS-->
+
+
+    <!--BANNER-->
+
     <section>
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
@@ -57,21 +62,55 @@
         </div>
     </section>
 
+    <!--BANNER ENDS-->
+
+    <!--COVID STATS-->
+
+    <section id="track">
+        <div class="container-fluid bg-light p-5 text-center my-3">
+            <h1>COVID-19 Indian Tracker</h1>
+        </div>
+
+        <div class="container my-5">
+            <div class="row text-center">
+                <div class="col-3 text-warning">
+                    <h5>Confirmed</h5>
+                    <p id="confirmed"></p>
+                </div>
+                <div class="col-3 text-info">
+                    <h5>Active</h5>
+                    <p id="active"></p>
+                </div>
+                <div class="col-3 text-success">
+                    <h5>Recovered</h5>
+                    <p id="recovered"></p>
+                </div>
+                <div class="col-3 text-danger">
+                    <h5>Deaths</h5>
+                    <p id="deaths"></p>
+                </div>
+            </div>
+            <canvas id="myChart"></canvas>
+
+        </div>
+    </section>
+
+    <!--COVID STATS ENDS-->
 
 
 
 
 
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+        <script src="./index.js"></script>
 </body>
 
 </html>
