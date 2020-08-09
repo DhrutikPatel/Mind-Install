@@ -1,12 +1,14 @@
 $(document).ready(function () {
     json_drpdwn_data('Symptom');
     function json_drpdwn_data(id) {
-        var html_code = '';
+        var html_code = ''
+        var symurl = "https://krshn-ptl.github.io/json-files/Symptom-severity.json"
+       
         $.getJSON('Symptom-severity.json', function (data) {
             html_code += '<option> Select ' + id + '</option>';
             $.each(data, function (key, value) {
                 if (id == 'Symptom') {
-                    html_code += '<option value="+' + value.Symptom + '">' + value.Symptom + '</option>';
+                    html_code += '<option value="' + value.Symptom + '">' + value.Symptom + '</option>';
                 }
                 $('#dp1').html(html_code);
                 $('#dp2').html(html_code);
